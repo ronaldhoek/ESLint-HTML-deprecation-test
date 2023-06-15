@@ -49,10 +49,25 @@
       "files": [
         "*.html"
       ],
+      "parserOptions": {
+        "project": [
+          "tsconfig.json"
+        ]
+      },
       "extends": [
         "plugin:@angular-eslint/template/recommended"
       ],
-      "rules": {}
+      "plugins": [
+        "deprecation"
+      ],
+      "rules": {
+        /*
+          Plugins rules
+        */
+        "deprecation/deprecation": [
+          "warn"
+        ]
+      }
     }
   ]
 }
